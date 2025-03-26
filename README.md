@@ -1,0 +1,7 @@
+Abstract：
+The intelligent meter calibration of electrical charging piles is of great significance to accurate electricity trade and device maintenance. In this article, a distributed neural network model with embedded physical information (DTPI) algorithm is proposed for the estimation of meter error and line loss where charging order data and the law of conservation of energy are employed. Firstly, a data information projection matrix is designed to explore the inherent data characteristics within charging order data. Secondly, due to distinct vehicle conditions, a distributed framework is carried out to cluster the projected data according to charging behavior. Meanwhile, the Transformer model is exploited in each cluster to estimate intermediate results of line loss, which serves as the initial value of the embedding physical information neural network (PINN) to meter error by building simultaneous equations based on the law of conservation of energy. Finally, the effectiveness of the proposed method is further validated in a practical charging station where the forecast results of the proposed DTPI algorithm outperforms the other state-of-the-art (SOTA) methods.
+Code:
+The file 'test1030_BestRessult.py' is the main function, where the FeatureRegress is been used for regress the data between Bill and Vehicle.
+THIS NOTICE THAT 'feed_sample.npy' is the data that have benn pre-process.
+And The file 'Physics_BayesNet.py' is the last step to caculate the operating error.
+DON'T BE MIND, JUST RUN :) 
